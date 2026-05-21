@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music | dcabrera.net</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Music Corner</h1>
+    <p class="tagline">Choir / Bass Voice / Recordings</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
+        <a href="photos.html">Photos</a>
+        <a href="fitness.html">Fitness</a>
+        <button class="nav-button" onclick="openResume()">Resume</button>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>About This Room</h2>
+        <p>
+            This is where I keep choir memories, vocal notes, bass voice stuff,
+            small recordings, piano progress, and other music-related pieces of the archive.
+        </p>
+        <p class="project-tags">[Choir] [Bass Voice] [Singing] [Recordings]</p>
+    </section>
+
+    <section>
+        <h2>Recordings</h2>
+
+        <div class="recording-list">
+            <details class="audio-card">
+                <summary>Bless The Lord, O My Soul</summary>
+
+                <p class="log-date">Rachmaninoff / All-Night Vigil</p>
+
+                <p>
+                    Ending excerpt from Rachmaninoff's <em>All-Night Vigil</em>, Movement 2.
+                    The basses descend through a C3 to C2 major scale while the upper part
+                    sits high, with me holding around C5.
+                </p>
+
+                <audio controls>
+                    <source src="assets/audio/Bless_the_Lord_O_My_Soul.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </details>
+
+            <details class="audio-card">
+                <summary>Nunc Dimittis</summary>
+
+                <p class="log-date">Rachmaninoff / All-Night Vigil</p>
+
+                <p>
+                    Ending excerpt from Rachmaninoff's <em>All-Night Vigil</em>, Movement 5.
+                    This is the famous low bass descent, often known as the “Rach Challenge.”
+                    The original line descends from Bb2 to Bb1, but I transcribed it down
+                    a half step, so this version descends from A2 to A1.
+                </p>
+
+                <audio controls>
+                    <source src="assets/audio/Nunc_Dimittis.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </details>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p class="faith-mark"><span class="glow-cross">✝</span> Colossians 3:23</p>
+</footer>
+
+<div id="resumeModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <p>Resume</p>
+            <div class="modal-buttons">
+                <a href="resume.html" target="_blank">Fullscreen</a>
+                <button onclick="closeResume()">Exit</button>
+            </div>
+        </div>
+        <iframe src="resume.html"></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

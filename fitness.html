@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness | dcabrera.net</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Fitness Room</h1>
+    <p class="tagline">Progress / Training / Notes</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
+        <a href="photos.html">Photos</a>
+        <a href="fitness.html">Fitness</a>
+        <button class="nav-button" onclick="openResume()">Resume</button>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>About This Room</h2>
+        <p>
+            This room tracks my fitness journey, weight loss progress, lifting, routines,
+            and lessons learned along the way.
+        </p>
+        <p class="project-tags">[Fitness] [Progress] [Training Log]</p>
+    </section>
+
+    <section>
+        <h2>Fitness Timeline</h2>
+
+        <div class="log-list">
+            <article>
+                <p class="log-date">Age 16</p>
+                <h3>Starting Point</h3>
+                <p>
+                    Heaviest weight was around 220 lbs.
+                </p>
+            </article>
+
+            <article>
+                <p class="log-date">High School</p>
+                <h3>First Major Cut</h3>
+                <p>
+                    Cut down from 220 lbs to around 170 lbs.
+                </p>
+            </article>
+
+            <article>
+                <p class="log-date">University</p>
+                <h3>Weight Regain</h3>
+                <p>
+                    Gained weight back during university and decided to restart the journey.
+                </p>
+            </article>
+
+            <article>
+                <p class="log-date">Jan 3, 2026</p>
+                <h3>Restart</h3>
+                <p>
+                    Restarted at 207 lbs.
+                </p>
+            </article>
+
+            <article>
+                <p class="log-date">Current</p>
+                <h3>Current Status</h3>
+                <p>
+                    Currently around 186 lbs, with the lowest recent weigh-in being 182 lbs.
+                    Estimated body fat is around 28%.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <h2>Current Goal</h2>
+        <p>
+            The goal is to cut down to around 12–15% body fat, maintain for about a month,
+            then clean bulk toward around 180 lbs while staying lean and strong.
+        </p>
+        <p class="project-tags">[Cut] [12–15% Body Fat] [Maintain] [Clean Bulk]</p>
+    </section>
+</main>
+
+    <section>
+        <h2>Current Focus</h2>
+        <ul>
+            <li>Cutting down while keeping strength</li>
+            <li>Building consistency in the gym</li>
+            <li>Improving posture and mobility</li>
+            <li>Tracking progress over time</li>
+        </ul>
+        <p class="project-tags">[In Progress]</p>
+    </section>
+</main>
+
+<footer>
+    <p class="faith-mark"><span class="glow-cross">✝</span> Colossians 3:23</p>
+</footer>
+
+<div id="resumeModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <p>Resume</p>
+            <div class="modal-buttons">
+                <a href="resume.html" target="_blank">Fullscreen</a>
+                <button onclick="closeResume()">Exit</button>
+            </div>
+        </div>
+        <iframe src="resume.html"></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

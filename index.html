@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dcabrera.net</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>dcabrera.net</h1>
+    <p class="tagline">Engineering / Music / Archive</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
+        <a href="photos.html">Photos</a>
+        <a href="fitness.html">Fitness</a>
+        <button class="nav-button" onclick="openResume()">Resume</button>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Welcome</h2>
+        <p>
+            Hi, welcome to my little corner of the internet. I'm David, a Computer
+            Engineering student at California State University, Long Beach.
+        </p>
+        <p>
+            This site is where I keep track of engineering projects, music, school,
+            fitness progress, and other things I'm building or learning along the way.
+        </p>
+    </section>
+
+    <section class="status-panel">
+        <h2>Status</h2>
+        <p><span>Location:</span> Long Beach, CA</p>
+        <p><span>School:</span> CSULB Computer Engineering</p>
+        <p><span>Year:</span> Fourth year / expected grad 2028</p>
+        <p><span>Currently building:</span> Arduino Smart Alarm</p>
+        <p><span>Current mode:</span> Learning, logging, improving</p>
+    </section>
+
+    <section>
+        <h2>Rooms</h2>
+        <div class="rooms">
+            <a href="engineering.html">Engineering Bay</a>
+            <a href="music.html">Music Corner</a>
+            <a href="photos.html">Photo Shelf</a>
+            <a href="fitness.html">Fitness Room</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Project</h2>
+        <h3>Arduino Smart Alarm</h3>
+        <p>
+            A beginner embedded systems project using an Elegoo Uno R3. The alarm can be
+            armed and disarmed with a button, show status with an LED, detect input from
+            a sensor, and trigger a buzzer.
+        </p>
+        <p class="project-tags">[Arduino] [Embedded Systems] [Breadboarding] [In Progress]</p>
+    </section>
+
+    <section>
+        <h2>Links</h2>
+        <div class="link-list">
+            <a href="mailto:dcabrea90@gmail.com">Email: dcabrea90@gmail.com</a>
+            <a href="https://www.linkedin.com/in/david-cabrera-32b31630b" target="_blank">LinkedIn</a>
+            <a href="https://github.com/DavyisWavy123" target="_blank">GitHub</a>
+            <button onclick="openResume()">Resume</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p class="faith-mark"><span class="glow-cross">✝</span> Colossians 3:23</p>
+</footer>
+
+<div id="resumeModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <p>Resume</p>
+            <div class="modal-buttons">
+                <a href="resume.html" target="_blank">Fullscreen</a>
+                <button onclick="closeResume()">Exit</button>
+            </div>
+        </div>
+        <iframe src="resume.html"></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

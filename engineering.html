@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>engineering | dcabrera.net</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Engineering Bay</h1>
+    <p class="tagline">Projects / Hardware / Learning Logs</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
+        <a href="photos.html">Photos</a>
+        <a href="fitness.html">Fitness</a>
+        <button class="nav-button" onclick="openResume()">Resume</button>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>dcabrera.net</h2>
+        <p>
+            This website is my first personal web project. The goal is to build a personal
+            archive, portfolio, and project log from scratch using HTML, CSS, and JavaScript.
+        </p>
+        <p class="project-tags">[HTML] [CSS] [JavaScript] [Personal Site]</p>
+    </section>
+
+    <section>
+        <h2>Arduino Smart Alarm</h2>
+        <p>
+            A beginner embedded systems project using an Elegoo Uno R3 kit, breadboard,
+            button input, LED status, sensor input, and buzzer output.
+        </p>
+        <p>
+            The goal is to create a simple alarm system with OFF, ARMED, and ALARM states.
+        </p>
+        <p class="project-tags">[Arduino] [Breadboard] [Embedded Systems] [In Progress]</p>
+    </section>
+
+    <section>
+        <h2>Learning Tools</h2>
+        <ul>
+            <li>Verilog and Vivado</li>
+            <li>LTspice circuit simulation</li>
+            <li>Breadboarding</li>
+            <li>Digital multimeter</li>
+            <li>Oscilloscope</li>
+            <li>DC power supply</li>
+        </ul>
+        <p class="project-tags">[Computer Engineering] [Circuits] [Digital Logic]</p>
+    </section>
+
+    <section>
+        <h2>Future Project Ideas</h2>
+        <ul>
+            <li>Formula SAE low voltage or data acquisition work</li>
+            <li>Small Verilog / FPGA demos</li>
+            <li>Basic sensor dashboard</li>
+            <li>Datathon notes or beginner data project</li>
+        </ul>
+        <p class="project-tags">[Planned] [Ideas] [Learning Queue]</p>
+    </section>
+</main>
+
+<footer>
+    <p class="faith-mark"><span class="glow-cross">✝</span> Colossians 3:23</p>
+</footer>
+
+<div id="resumeModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <p>Resume</p>
+            <div class="modal-buttons">
+                <a href="resume.html" target="_blank">Fullscreen</a>
+                <button onclick="closeResume()">Exit</button>
+            </div>
+        </div>
+        <iframe src="resume.html"></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
